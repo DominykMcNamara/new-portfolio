@@ -7,22 +7,34 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "wdio": "wdio run ./wdio.conf.ts",
+    "test": "mocha"
   },
   "dependencies": {
-    "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^4.0.0",
+    "@wdio/browser-runner": "^8.10.0",
+    "@wdio/cli": "^8.10.0",
+    "@wdio/mocha-framework": "^8.10.0",
+    "@wdio/spec-reporter": "^8.10.0",
+    "chromedriver": "^113.0.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "typescript": "^5.0.2",
-    "vite": "^4.3.2"
+    "mocha": "^10.2.0",
+    "react": "^18.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.2",
+    "wdio-chromedriver-service": "^8.1.1"
   }
 }
