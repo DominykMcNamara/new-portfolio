@@ -1,12 +1,11 @@
 
-import React from 'react'
 import { expect, $ } from '@wdio/globals'
 import { render, screen, fireEvent } from '@testing-library/react'
 
 import * as matchers from '@testing-library/jest-dom/matchers'
 expect.extend(matchers)
 
-import ExampleComponent from './Component'
+import ExampleComponent from '../components/Component'
 
 describe('React Component Tests', () => {
     

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import './Component.css'
+import '../css/Component.css'
 
 export default function ExampleComponent () {
     const [count, setCount] = useState(0)
